@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+
 # Proyecto APC-and-Rent
-<img src=""> 
+<img src="img/logo.png"> 
 
 ## Indice 
 
@@ -28,6 +28,3 @@
 
 
 
-=======
-# APC-and-Rent
->>>>>>> 5b132b0f6d36b748861a5af86c5629148bf49eed
