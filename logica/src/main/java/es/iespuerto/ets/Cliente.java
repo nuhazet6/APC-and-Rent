@@ -1,5 +1,9 @@
 package es.iespuerto.ets;
 
+/**
+ * @author Roberto Martinez Pereira y Nuhazet Correa Torres
+ */
+
 public class Cliente {
 
     private int codigoPostal;
@@ -7,10 +11,16 @@ public class Cliente {
     private String fechaRegistro;
 
 
-
+    /**
+     * Descripcion Constructor de la clase Cliente por defecto
+     */
     public Cliente() {
     }
-
+    /**
+     * Descripcion Constructor con parametros de la clase Cliente 
+     * @param codigoPostal primer parametro codigo postal del Constructor 
+     * @param fechaRegistro segundo parametro fecha de registro del Constructor
+     */
     public Cliente(int codigoPostal, String fechaRegistro) {
         this.codigoPostal = codigoPostal;
         this.fechaRegistro = fechaRegistro;

@@ -1,5 +1,9 @@
 package es.iespuerto.ets;
 
+/**
+ * 
+ * @author Roberto Martinez y Nuhazet Correa Torres
+ */
 public class Anuncio {
     private String tipoPropiedad;
     private String direccion;
@@ -7,11 +11,19 @@ public class Anuncio {
     private int telefono;
 
 
-
+/**
+ * Constructor por defecto de la la clase Anuncio
+ */
     public Anuncio() {
     }
 
-
+/**
+ * Descripcion Constructor con todos los parametros 
+ * @param tipoPropiedad parametro tipo de Propiedad del constructor con parametros  
+ * @param direccion  parametro direccion del constructor con parametros 
+ * @param tipoHabitacion parametro tipo de habitacion del constructor con parametros
+ * @param telefono parametro telefono del metodo constructor con parametros de la clase 
+ */
     public Anuncio(String tipoPropiedad, String direccion, String tipoHabitacion, int telefono) {
         this.tipoPropiedad = tipoPropiedad;
         this.direccion = direccion;
@@ -20,11 +32,11 @@ public class Anuncio {
     }
 
    
-
+   
     public String getTipoPropiedad() {
         return this.tipoPropiedad;
     }
-
+    
     public void setTipoPropiedad(String tipoPropiedad) {
         this.tipoPropiedad = tipoPropiedad;
     }

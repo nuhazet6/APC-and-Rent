@@ -1,5 +1,9 @@
 package es.iespuerto.ets;
 
+/**
+ * @author Nuhazet Correa Torres y Roberto Martinez 
+ */
+
 public class Cuenta {
 
     private String nick;
@@ -9,11 +13,21 @@ public class Cuenta {
     private String dni;
     private int telefono;
 
-
+    /**
+     * Descripcion Metodo constructor de la clase Cuenta
+     */
     public Cuenta() {
     }
     
-
+    /**
+     * Descripcion metodo constructor con parametros de la clase Cuenta
+     * @param nick primer parametro del constructor con parametros nickname
+     * @param contrasena segundo parametro del constructor con parametros contrasena
+     * @param rol tercero tercer parametro del constructor con parametros rol
+     * @param nombreCompleto cuarto parametro del constructor con parametros nombre completo
+     * @param dni quinto parametro del constructor con parametros dni
+     * @param telefono sexto parametro del constructor con parametros telefono 
+     */
     public Cuenta(String nick, String contrasena, String rol, String nombreCompleto, String dni, int telefono) {
         this.nick = nick;
         this.contrasena = contrasena;
