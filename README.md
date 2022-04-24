@@ -1,6 +1,6 @@
 
 # Proyecto APC-and-Rent
-<img src="img/logo.png"> 
+<p align="center"><img src="img/logo.png"> </p>
 
 
 <p align="align">
