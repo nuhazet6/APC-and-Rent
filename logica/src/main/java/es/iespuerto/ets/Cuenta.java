@@ -12,6 +12,8 @@ public class Cuenta {
     private String nombreCompleto;
     private String dni;
     private int telefono;
+    private int codigoPostal;
+    private String fechaRegistro;
 
     /**
      * Descripcion Metodo constructor de la clase Cuenta
@@ -28,13 +30,15 @@ public class Cuenta {
      * @param dni quinto parametro del constructor con parametros dni
      * @param telefono sexto parametro del constructor con parametros telefono 
      */
-    public Cuenta(String nick, String contrasena, String rol, String nombreCompleto, String dni, int telefono) {
+    public Cuenta(String nick, String contrasena, String rol, String nombreCompleto, String dni, int telefono, int codigoPostal, String fechaRegistro) {
         this.nick = nick;
         this.contrasena = contrasena;
         this.rol = rol;
         this.nombreCompleto = nombreCompleto;
         this.dni = dni;
         this.telefono = telefono;
+        this.codigoPostal = codigoPostal;
+        this.fechaRegistro = fechaRegistro;
     }
 
     public String getNick() {
@@ -83,6 +87,21 @@ public class Cuenta {
 
     public void setTelefono(int telefono) {
         this.telefono = telefono;
+    }
+     public int getCodigoPostal() {
+        return this.codigoPostal;
+    }
+
+    public void setCodigoPostal(int codigoPostal) {
+        this.codigoPostal = codigoPostal;
+    }
+
+    public String getFechaRegistro() {
+        return this.fechaRegistro;
+    }
+
+    public void setFechaRegistro(String fechaRegistro) {
+        this.fechaRegistro = fechaRegistro;
     }
 
 
