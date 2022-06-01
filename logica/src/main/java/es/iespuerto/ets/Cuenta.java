@@ -4,7 +4,7 @@ package es.iespuerto.ets;
  * @author Nuhazet Correa Torres y Roberto Martinez 
  */
 
-public class Cuenta {
+public abstract class Cuenta {
 
     private String nick;
     private String contrasena;
