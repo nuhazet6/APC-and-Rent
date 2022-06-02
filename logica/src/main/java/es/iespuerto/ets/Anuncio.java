@@ -1,10 +1,16 @@
 package es.iespuerto.ets;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.net.URISyntaxException;
+import java.util.*;
+
 /**
  * 
  * @author Roberto Martinez y Nuhazet Correa Torres
  */
 public class Anuncio {
+    private List<Anuncio> anuncio = new ArrayList<>();
     private String tipoPropiedad;
     private String direccion;
     private String tipoHabitacion;
@@ -23,6 +29,21 @@ public class Anuncio {
         this.direccion = direccion;
         this.tipoHabitacion = tipoHabitacion;
         this.telefono = telefono;
+    }
+
+    public List<Anuncio> leerAnuncios() throws FileNotFoundException, URISyntaxException {
+        List<Anuncio> anuncio = new ArrayList<>();
+        Scanner fichero = new Scanner(new File(Utilidades.obtenerPathFichero("anuncio.txt")));
+        String linea;
+        String[] lineaDatos;
+        fichero.nextLine();
+        while (fichero.hasNextLine()) {
+            linea = fichero.nextLine();
+            lineaDatos = linea.split(";");
+            anuncio.add(new Anuncio(lineaDatos[0], lineaDatos[1], lineaDatos[2],
+            Integer.parseInt(lineaDatos[3])));
+        }
+        return anuncio;
     }
 
    
