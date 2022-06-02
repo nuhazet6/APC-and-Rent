@@ -12,12 +12,6 @@ public class Anuncio {
 
 
 /**
- * Constructor por defecto de la la clase Anuncio
- */
-    public Anuncio() {
-    }
-
-/**
  * Descripcion Constructor con todos los parametros 
  * @param tipoPropiedad parametro tipo de Propiedad del constructor con parametros  
  * @param direccion  parametro direccion del constructor con parametros 

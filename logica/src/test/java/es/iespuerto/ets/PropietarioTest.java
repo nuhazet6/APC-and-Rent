@@ -1,6 +1,8 @@
 package es.iespuerto.ets;
 
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.*;
 
 public class PropietarioTest {
     @Test
