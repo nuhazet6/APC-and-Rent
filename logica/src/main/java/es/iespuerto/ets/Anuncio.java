@@ -10,11 +10,14 @@ import java.util.*;
  * @author Roberto Martinez y Nuhazet Correa Torres
  */
 public class Anuncio {
-    private List<Anuncio> anuncio = new ArrayList<>();
+    private List<Anuncio> anuncios = new ArrayList<>();
     private String tipoPropiedad;
     private String direccion;
     private String tipoHabitacion;
     private int telefono;
+    private int id;
+
+
 
 
 /**
@@ -23,30 +26,15 @@ public class Anuncio {
  * @param direccion  parametro direccion del constructor con parametros 
  * @param tipoHabitacion parametro tipo de habitacion del constructor con parametros
  * @param telefono parametro telefono del metodo constructor con parametros de la clase 
+ * @param id parametro id del metodo constructor con parametros de la clase
  */
-    public Anuncio(String tipoPropiedad, String direccion, String tipoHabitacion, int telefono) {
+    public Anuncio(String tipoPropiedad, String direccion, String tipoHabitacion, int telefono,int id) {
         this.tipoPropiedad = tipoPropiedad;
         this.direccion = direccion;
         this.tipoHabitacion = tipoHabitacion;
         this.telefono = telefono;
+        this.id=id;
     }
-
-    public List<Anuncio> leerAnuncios() throws FileNotFoundException, URISyntaxException {
-        List<Anuncio> anuncio = new ArrayList<>();
-        Scanner fichero = new Scanner(new File(Utilidades.obtenerPathFichero("anuncio.txt")));
-        String linea;
-        String[] lineaDatos;
-        fichero.nextLine();
-        while (fichero.hasNextLine()) {
-            linea = fichero.nextLine();
-            lineaDatos = linea.split(";");
-            anuncio.add(new Anuncio(lineaDatos[0], lineaDatos[1], lineaDatos[2],
-            Integer.parseInt(lineaDatos[3])));
-        }
-        return anuncio;
-    }
-
-   
    
     public String getTipoPropiedad() {
         return this.tipoPropiedad;
@@ -78,6 +66,13 @@ public class Anuncio {
 
     public void setTelefono(int telefono) {
         this.telefono = telefono;
+    }
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     
